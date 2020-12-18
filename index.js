@@ -1,16 +1,12 @@
-/* global loadImage createCanvas noStroke background
-  fill circle mouseX mouseY constrain width height
-  collideCircleCircle noLoop
-*/
 let backgroundImage;
 let playerSprite;
 let enemySprite;
 let health = 100;
-let time = 0
+let time = 0;
 
 const healthSpan = document.querySelector("#health");
 const doneSpan = document.querySelector("#done");
-const timeSpan = document.querySelector("#time")
+const timeSpan = document.querySelector("#time");
 
 function preload() {
   backgroundImage = loadImage(
@@ -24,8 +20,9 @@ function preload() {
   );
 }
 
-setInterval(function(){
-  time +=1}, 1000)
+setInterval(function() {
+  time += 1;
+}, 1000);
 
 function setup() {
   game.initialize();
@@ -122,10 +119,10 @@ const game = {
       agent.draw();
     }
     this.checkForCollisions();
-    timeSpan.textContent = time + " seconds"
+    timeSpan.textContent = time + " seconds";
     healthSpan.textContent = health;
     if (health <= 0) {
-     doneSpan.textContent = "GAME OVER" 
+      doneSpan.textContent = "GAME OVER";
       noLoop();
     }
   }
