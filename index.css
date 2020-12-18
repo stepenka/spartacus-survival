@@ -1,0 +1,38 @@
+body {
+  font-family: Avenir;
+  margin: 20px;
+  background-color: gold;
+  text-align: center;
+}
+
+header {
+  background-color: pink;
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  font-style: italic;
+  font-size: 10px;
+}
+
+.gameOver {
+  color: red;
+  font-family: fantasy;
+  font-size: 40px;
+  text-align: center;
+}
+
+h1 {
+  background-color: red;
+  color: yellow;
+  font-family: sans-serif;
+  border-style: double;
+  border-color: yellow;
+}
+
+.info {
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+}
